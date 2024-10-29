@@ -1,8 +1,12 @@
 let uniqueLink;
+
 document.getElementById('greetingForm').onsubmit = async function (event) {
     event.preventDefault();
 
     const formData = new FormData(this);
+
+    const submitButton = this.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
 
     try {
         const response = await fetch('/upload', {
@@ -25,15 +29,22 @@ document.getElementById('greetingForm').onsubmit = async function (event) {
                 <button onclick="shareOnWhatsApp()">Share on WhatsApp</button>
             `;
         } else {
+            console.error('Error from server:', data.error);
             document.getElementById('result').innerHTML = `<p>Error: ${data.error || 'Unknown error'}</p>`;
         }
     } catch (error) {
-        document.getElementById('result').innerHTML = `<p>Error: Could not create greeting</p>`;
         console.error('Error uploading greeting:', error);
+        document.getElementById('result').innerHTML = `<p>Error: Could not create greeting</p>`;
+    } finally {
+        submitButton.disabled = false;
     }
 };
 
 function shareOnFacebook() {
+    if (!uniqueLink) {
+        console.error('Unique link is not defined.');
+        return;
+    }
     console.log('Facebook share button clicked');
     const url = encodeURIComponent(uniqueLink);
     const message = encodeURIComponent('Check out my Diwali greeting!');
@@ -41,6 +52,10 @@ function shareOnFacebook() {
 }
 
 function shareOnTwitter() {
+    if (!uniqueLink) {
+        console.error('Unique link is not defined.');
+        return;
+    }
     console.log('Twitter share button clicked');
     const url = encodeURIComponent(uniqueLink);
     const message = encodeURIComponent('Check out my Diwali greeting!');
@@ -48,6 +63,10 @@ function shareOnTwitter() {
 }
 
 function shareOnWhatsApp() {
+    if (!uniqueLink) {
+        console.error('Unique link is not defined.');
+        return;
+    }
     console.log('WhatsApp share button clicked');
     const url = encodeURIComponent(uniqueLink);
     const message = encodeURIComponent('Check out my Diwali greeting!');

@@ -12,6 +12,11 @@
     <p><strong>Message:</strong> <%= greeting.message %></p>
     <p><strong>Frame:</strong> <%= greeting.frame %></p>
     <p>Your unique ID: <%= greeting.uniqueId %></p>
+    <div id="share-buttons">
+        <button onclick="shareOnFacebook()">Share on Facebook</button>
+        <button onclick="shareOnTwitter()">Share on Twitter</button>
+        <button onclick="shareOnWhatsApp()">Share on WhatsApp</button>
+    </div>    
     <script src="/js/scripts.js"></script>
 </body>
 </html>

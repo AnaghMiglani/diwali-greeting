@@ -1,0 +1,22 @@
+{
+  "name": "diwali-greeting",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cloudinary": "^2.5.1",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.3",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^11.0.2"
+  }
+}

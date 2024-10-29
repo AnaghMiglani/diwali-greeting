@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diwali Greeting Generator</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Create Your Diwali Greeting</h1>
+    <form id="greetingForm" enctype="multipart/form-data">
+      <label for="image">Upload Your Photo:</label>
+      <input type="file" id="image" name="image" accept="image/*" required>
+
+      <label for="message">Custom Message:</label>
+      <textarea id="message" name="message" placeholder="Enter your Diwali message here" required></textarea>
+
+      <label for="frame">Choose a Festive Frame:</label>
+      <select id="frame" name="frame">
+        <option value="none">None</option>
+        <option value="frame1">Frame 1</option>
+        <option value="frame2">Frame 2</option>
+      </select>
+
+      <button type="submit">Generate Greeting</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <div id="linkDisplay"></div>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>

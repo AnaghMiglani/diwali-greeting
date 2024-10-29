@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fbe7b2;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .container, .greeting-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    color: #d2691e;
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  form input, form textarea, form select, form button {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+  }
+  
+  form button {
+    background-color: #d2691e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  form button:hover {
+    background-color: #ff5733;
+  }
+  
+  #greetingImage {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  #greetingFrame {
+    border: 5px solid #d2691e;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  #greetingMessage {
+    font-size: 1.2em;
+    color: #d2691e;
+  }
+  

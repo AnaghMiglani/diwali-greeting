@@ -8,7 +8,10 @@
 </head>
 <body>
     <h1>Your Diwali Greeting!</h1>
-    <img src="<%= greeting.imageUrl %>" alt="Diwali Greeting" id="greetingImage">
+    <div id="frameContainer">
+        <img src="<%= greeting.imageUrl %>" alt="Diwali Greeting" id="greetingImage">
+        <div class="frameOverlay <%= greeting.frame %>"></div>
+    </div>    
     <p><strong>Message:</strong> <%= greeting.message %></p>
     <p><strong>Frame:</strong> <%= greeting.frame %></p>
     <p>Your unique ID: <%= greeting.uniqueId %></p>

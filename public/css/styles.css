@@ -54,14 +54,44 @@
     border-radius: 10px;
   }
   
-  #greetingFrame {
+  /* #greetingFrame {
     border: 5px solid #d2691e;
     padding: 10px;
     margin: 10px 0;
-  }
+  } */
   
   #greetingMessage {
     font-size: 1.2em;
     color: #d2691e;
+  }
+  #frameContainer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #greetingImage {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .frameOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevents interaction with the overlay */
+  }
+  
+  .frame1 {
+    background-image: url('/images/diwali_lights_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .frame2 {
+    background-image: url('/images/diwali_diya_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   

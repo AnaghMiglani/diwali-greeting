@@ -6,6 +6,9 @@ The Diwali Greeting Generator is a web application that allows users to create p
 ## Website Link
 Visit [https://diwali-greeting.onrender.com/](https://diwali-greeting.onrender.com/) or click [here](#Installation) for instructions on installing locally.
 
+## Demo Video
+Check out the [demo video](https://drive.google.com/file/d/1qBTceOcWg0eFsiFE9prWDfuJpF69f8ud/view?usp=sharing) to see how the application works
+
 ## Features
 - Upload a photo and create a personalized greeting.
 - Choose from various festive frames to enhance your greeting.

@@ -1,5 +1,5 @@
 const Greeting = require('../models/Greeting');
-const cloudinary = require('../config/cloudinaryconfig'); // import the Cloudinary config
+const cloudinary = require('../config/cloudinaryConfig.js'); // import the Cloudinary config
 const { v4: uuidv4 } = require('uuid'); // for generating unique IDs
 const fs = require('fs');
 
